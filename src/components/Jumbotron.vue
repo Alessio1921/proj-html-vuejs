@@ -27,6 +27,10 @@
     </div>
   </div>
   <div class="jumbotron-bottom">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="text-white fw-lighter ms-5">How to Enroll Your Child to a Class?</h1>
+      <button class="btn btn-outline-light me-5">Learn More ></button>
+    </div>
   </div>
 </div>
 </template>
@@ -41,12 +45,28 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "../assets/scss/style.scss";
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 .jumbotron{
   height: 630px;
   .jumbotron-top{
     background-image: url('../assets/fable/images/slider_slide2_background.png');
     background-position: bottom;
     height: 500px;
+    .jumbo-text{
+      h2{
+        color:$orange;
+        font-family: 'Indie Flower', cursive;
+      }
+      h1{
+        color:$violet;
+      }
+      .btn{
+        background-color: $orange;
+        border-radius: 0 ;
+        margin-top: 40px;
+      }
+    }
     .container{
       height: 500px;
       .img-background{
@@ -56,10 +76,6 @@ export default {
           position: relative;
           top:60px;
         }
-      }
-      .btn{
-        background-color: #fe6601;
-        border-radius: 0 ;
       }
       .jumbo-img{
         height: 100%;
@@ -87,9 +103,15 @@ export default {
     }
   }
   .jumbotron-bottom{
-      background-color: #554e9e;
+      background-color: $violet;
       height: 130px;
       width: 100%;
+      .container{
+        height: 100%;
+        .btn{
+          border-radius: 0;
+        }
+      }
     }
 }
 </style>

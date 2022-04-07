@@ -79,6 +79,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "../assets/scss/style.scss";
 .container,
 .row,
 .col-12,
@@ -98,7 +99,7 @@ header{
         }
         ul{
           li.active{
-            background-color: #fe6601;
+            background-color: $orange;
             color: white;
           }
         }
