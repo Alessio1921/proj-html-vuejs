@@ -1,9 +1,9 @@
 <template>
-  <header>
+  <header >
     <div class="container">
-      <div class="row">
+      <div class="row mx-5">
         <div class="col-12 d-flex justify-content-between">
-          <div class="header-logo ms-5">
+          <div class="header-logo ">
             <img src="../assets/fable/images/logo.png" alt="">
           </div>
           <div class="right-header">
