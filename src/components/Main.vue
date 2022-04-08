@@ -103,26 +103,6 @@
           <h3 class="my-5">
             We provided four classes with nine to twenty children each aged twelve month to five years of age.
           </h3>
-          <!-- <div class="my-card d-flex">
-            <div class="info p-3">
-              <h5 class="text-white">Little Lambs</h5>
-              <p class="text-white">Class name</p>
-              <div class="info-bottom position-relative text-center">
-                <div class="year text-center pe-3 border-end border-2 border-light d-inline-block">
-                  <p>12-24</p>
-                  <p>Month olds</p>
-                </div>
-                <div class="size text-center ms-3 d-inline-block">
-                  <p>9</p>
-                  <p>Class size</p>
-                </div>
-              </div>
-            </div>
-            <div class="img position-relative">
-              <img src="../assets/fable/images/class_01-690x506.jpg" alt="little girl photo">
-              <div class="read-more text-uppercase text-white position-absolute d-flex">read more <img src="../assets/fable/images/slider_next.png" alt="next img"></div>
-            </div>
-          </div> -->
         </div>
         <!-- right part -->
         <div class="right">
@@ -133,6 +113,66 @@
       </div>
       <div class="my-container">
         <Card />
+      </div>
+    </section>
+    <!-- section education -->
+    <section id="education" class="mt-5">
+      <div class="my-container d-flex">
+        <div class="left">
+          <h3>We have been educating children for over fitteen vears. Our goal is to create a place tnat engages each child.</h3>
+          <p class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error molestiae impedit minus natus fugit, at enim. Fuga aliquam laudantium eos totam, numquam soluta aliquid velit quis deserunt nesciunt dolore blanditiis?</p>
+          <ul>
+            <li>
+              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+            <li>
+              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+            <li>
+              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+            <li>
+              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+            <li>
+              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+            <li>
+              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+          </ul>
+        </div>
+        <div class="right d-flex flex-wrap">
+          <div class="square">
+            <div class="img position-relative">
+              <img src="../assets/fable/images/toy.png" alt="">
+            </div>
+            <h3>Learning &#38; fun</h3>
+            <p>Praesent modea est gravida node vehicula lactus.</p>
+          </div>
+          <div class="square">
+            <div class="img position-relative">
+              <img src="../assets/fable/images/meal.png" alt="">
+            </div>
+            <h3>Healthy Meals</h3>
+            <p>Praesent modea est gravida node vehicula lactus.</p>
+          </div>
+          <div class="square">
+            <div class="img position-relative">
+              <img src="../assets/fable/images/school.png" alt="">
+            </div>
+            <h3>Friendly Place</h3>
+            <p>Praesent modea est gravida node vehicula lactus.</p>
+          </div>
+          <div class="square">
+            <div class="img position-relative">
+              <img src="../assets/fable/images/shield.png" alt="">
+            </div>
+            <h3>Children Safety</h3>
+            <p>Praesent modea est gravida node vehicula lactus.</p>
+          </div>
+
+        </div>
       </div>
     </section>
   </main>
@@ -241,9 +281,30 @@ export default {
         }
       }
     }
-    // our classes
-    #our-classes{
-      
-      }  
+    // education
+    #education{
+      ul{
+        list-style: none;
+        padding: 0;
+        li{
+          margin-bottom: .5rem;
+        }
+      }
+      .right{
+        .square{
+          width: 50%;
+          text-align: center;
+          .img{
+            height: 50%;
+            img{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+            }
+          }
+        }
+      }
+    }  
   }
 </style>
