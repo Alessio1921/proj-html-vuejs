@@ -1,7 +1,7 @@
 <template>
 <div class="jumbotron">
   <div class="jumbotron-top">
-    <div class="container d-flex position-relative align-items-center justify-content-between">
+    <div class="my-container d-flex position-relative align-items-center justify-content-between">
       <div class="img-background position-absolute">
         <img src="../assets/fable/images/slider_icon16.png" alt="">
         <img class="jumbo-item-down" src="../assets/fable/images/slider_icon14.png" alt="">
@@ -9,7 +9,7 @@
         <img class="jumbo-item-down" src="../assets/fable/images/slider_icon12.png" alt="">
         <img src="../assets/fable/images/slider_icon13.png" alt="">
       </div>
-      <div class="jumbo-text ms-5">
+      <div class="jumbo-text">
         <h2>Friendly Atmosphere</h2>
         <h1 class="fw-bold">Welcoming Place</h1>
         <h1 class="fw-lighter">For Every Child</h1>
@@ -27,9 +27,9 @@
     </div>
   </div>
   <div class="jumbotron-bottom">
-    <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="text-white fw-lighter ms-5">How to Enroll Your Child to a Class?</h1>
-      <button class="btn btn-outline-light me-5">Learn More ></button>
+    <div class="my-container d-flex align-items-center justify-content-between">
+      <h1 class="text-white fw-lighter">How to Enroll Your Child to a Class?</h1>
+      <button class="btn btn-outline-light">Learn More ></button>
     </div>
   </div>
 </div>
@@ -67,7 +67,7 @@ export default {
         margin-top: 40px;
       }
     }
-    .container{
+    .my-container{
       height: 500px;
       .img-background{
         left: 27%;
@@ -106,7 +106,7 @@ export default {
       background-color: $violet;
       height: 130px;
       width: 100%;
-      .container{
+      .my-container{
         height: 100%;
         .btn{
           border-radius: 0;

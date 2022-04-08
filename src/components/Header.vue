@@ -1,16 +1,16 @@
 <template>
   <header >
-    <div class="container">
-      <div class="row mx-5">
+    <div class="my-container">
+      <div class="row ">
         <div class="col-12 d-flex justify-content-between">
           <div class="header-logo ">
-            <img src="../assets/fable/images/logo.png" alt="">
+            <img src="../assets/fable/images/logo.png" alt="logo heaader img">
           </div>
           <div class="right-header">
-            <ul class="list-unstyled d-flex me-5">
+            <ul class="list-unstyled d-flex">
               <li class="element-header p-4 text-center" :class="(element.active) ? 'active' : ''" v-for="(element,index) in headerList" :key="index">
-                <img :src="require(`../assets/fable/`+element.imgActive)" alt="" v-if="element.active">
-                <img :src="require(`../assets/fable/`+element.img)" alt="" v-else>
+                <img :src="require(`../assets/fable/`+element.imgActive)" :alt=" element.text+' img'" v-if="element.active">
+                <img :src="require(`../assets/fable/`+element.img)" :alt="element.text+' img'" v-else>
                 <p>{{element.text}}</p>
               </li>
             </ul>
@@ -80,7 +80,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "../assets/scss/style.scss";
-.container,
+.my-container,
 .row,
 .col-12,
 .header-logo{
@@ -88,7 +88,7 @@ export default {
 }
 header{
   height: 100%;
-  .container{
+  .my-container{
     .row{
       .col-12{
         overflow: hidden;
