@@ -49,7 +49,7 @@
       </div>
     </section>
     <!-- section overview -->
-    <section id="overview" class="my-5">
+    <section id="overview" class="my-5 py-5">
       <div class="my-container d-flex">
         <!-- left part -->
         <div class="left">
@@ -90,24 +90,74 @@
         </div>
       </div>
     </section>
+    <!-- section our classes -->
+    <section id="our-classes">
+      <div class="our-top text-center">
+        <h1>Our Classes</h1>
+        <p>Our preschool program has four dedicated classes</p>
+        <img src="../assets/fable/images/header_divider.png" alt=" header divider img">
+      </div>
+      <div class="my-container d-flex">
+        <!-- left part -->
+        <div class="left me-5">
+          <h3 class="my-5">
+            We provided four classes with nine to twenty children each aged twelve month to five years of age.
+          </h3>
+          <!-- <div class="my-card d-flex">
+            <div class="info p-3">
+              <h5 class="text-white">Little Lambs</h5>
+              <p class="text-white">Class name</p>
+              <div class="info-bottom position-relative text-center">
+                <div class="year text-center pe-3 border-end border-2 border-light d-inline-block">
+                  <p>12-24</p>
+                  <p>Month olds</p>
+                </div>
+                <div class="size text-center ms-3 d-inline-block">
+                  <p>9</p>
+                  <p>Class size</p>
+                </div>
+              </div>
+            </div>
+            <div class="img position-relative">
+              <img src="../assets/fable/images/class_01-690x506.jpg" alt="little girl photo">
+              <div class="read-more text-uppercase text-white position-absolute d-flex">read more <img src="../assets/fable/images/slider_next.png" alt="next img"></div>
+            </div>
+          </div> -->
+        </div>
+        <!-- right part -->
+        <div class="right">
+          <p class="my-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vitae impedit quo, corporis ipsam hic beatae labore facere saepe sed quae aliquid voluptate ipsum omnis veniam sequi corrupti. Facere, necessitatibus?
+            </p>
+        </div>
+      </div>
+      <div class="my-container">
+        <Card />
+      </div>
+    </section>
   </main>
 </template>
 
 <script>
 import Carousel from './Carousel.vue'
+import Card from './Card.vue'
+
 export default {
   name: 'indexMain',
   components: {
     Carousel,
+    Card
   },
-  props: {
-  }
+
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import "../assets/scss/style.scss";
+  @import "../assets/scss/style.scss";
+  h3{
+    color: $violet;
+  }
   main{
     #welcome{
       h1{
@@ -147,12 +197,8 @@ export default {
     }
     // overview
     #overview{
-      background-color: $white;
+      background-color: $grey;
       .left{
-        width: 50%;
-        h3{
-          color: $violet;
-        }
         .title.orange{
           background-color: $orange;
         }
@@ -192,14 +238,12 @@ export default {
               transform: translate(-50%,-50%);
             }
           }
-          h3{
-            color:$violet;
-          }
         }
-      };
-      .right{
-        width: 50%;
       }
     }
+    // our classes
+    #our-classes{
+      
+      }  
   }
 </style>

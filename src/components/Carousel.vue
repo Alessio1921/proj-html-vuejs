@@ -32,19 +32,16 @@ export default {
           img:"gallery_07-690x506.jpg",
           active:false,
           text:"little girl photo",
-          id:1,
         },
         {
           img:"gallery_01-690x506.jpg",
           active:false,
           text:"children photo",
-          id:2,
         },
         {
           img:"gallery_08-690x506.jpg",
           active:true,
           text:"teacher photo",
-          id:3,
         }
       ],
     }
