@@ -49,7 +49,7 @@
       </div>
     </section>
     <!-- section overview -->
-    <section id="overview" class="mt-5">
+    <section id="overview" class="my-5">
       <div class="my-container d-flex">
         <!-- left part -->
         <div class="left">
