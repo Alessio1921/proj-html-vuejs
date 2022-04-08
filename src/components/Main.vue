@@ -171,7 +171,20 @@
             <h3>Children Safety</h3>
             <p>Praesent modea est gravida node vehicula lactus.</p>
           </div>
-
+        </div>
+      </div>
+    </section>
+    <section id="gallery" class="my-5">
+      <div class="gallery-top d-flex">
+        <img src="../assets/fable/images/gallery_01.jpg" alt="">
+        <img src="../assets/fable/images/gallery_02.jpg" alt="">
+        <img src="../assets/fable/images/gallery_03.jpg" alt="">
+        <img src="../assets/fable/images/gallery_04.jpg" alt="">
+      </div>
+      <div class="gallery-center d-flex">
+        <div class="my-container d-flex align-items-center justify-content-between">
+          <h1 class="text-white fw-lighter">See Our Kindergarten Photo Gallery!</h1>
+          <button class="btn btn-outline-light text-uppercase rounded-0">view gallery ></button>
         </div>
       </div>
     </section>
@@ -306,5 +319,16 @@ export default {
         }
       }
     }  
+    #gallery{
+      .gallery-top{
+        img{
+          width: calc(100% / 4)
+        }
+      }
+      .gallery-center{
+        background-image: url("../assets/fable/images/pattern.png");
+        height: 120px;
+      }
+    }
   }
 </style>
