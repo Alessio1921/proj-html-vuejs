@@ -174,6 +174,7 @@
         </div>
       </div>
     </section>
+    <!-- section gallery -->
     <section id="gallery" class="my-5">
       <div class="gallery-top d-flex">
         <img src="../assets/fable/images/gallery_01.jpg" alt="">
@@ -203,6 +204,7 @@
         </div>
       </div>
     </section>
+    <!-- section new -->
     <section id="new">
       <div class="my-container">
         <div class="our-top text-center">
@@ -296,7 +298,10 @@ export default {
     #welcome{
       h1{
         color: $violet;
-      } 
+      }
+      .my-container{
+        padding-left: 60px;
+      }
       .welcome-footer{
         .element-circle{
           margin:0 .8rem;
