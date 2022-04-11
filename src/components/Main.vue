@@ -9,40 +9,13 @@
       </div>
       <div class="welcome-footer">
         <div class="my-container d-flex mt-5">
-          <div class="element-circle text-center">
-            <div class="circle orange mx-auto">
-              <img src="../assets/fable/images/schoolbag_alt.png" alt="schoolbag img">
+          <div class="element-circle text-center" v-for="(element,index) in welcomeCircles" :key="index">
+            <div class="circle mx-auto">
+              <img :src="require(`../assets/fable/images/${element.img}`)" :alt="element.title+'img'">
             </div>
             <div class="element-text">
-              <h5>Morbis Etos</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, placeat recusandae, libero adipisci beatae laborum.</p>
-            </div>
-          </div>
-          <div class="element-circle text-center">
-            <div class="circle violet mx-auto">
-              <img src="../assets/fable/images/stroller_alt.png" alt="stroller img">
-            </div>
-            <div class="element-text">
-              <h5>Congue Gravida</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, placeat recusandae, libero adipisci beatae laborum.</p>
-            </div>
-          </div>
-          <div class="element-circle text-center">
-            <div class="circle orange mx-auto">
-              <img src="../assets/fable/images/bell_alt.png" alt="bell img">
-            </div>
-            <div class="element-text">
-              <h5>Maecenas Node</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, placeat recusandae, libero adipisci beatae laborum.</p>
-            </div>
-          </div>
-          <div class="element-circle text-center">
-            <div class="circle violet mx-auto">
-              <img src="../assets/fable/images/globe_alt.png" alt="goble img">
-            </div>
-            <div class="element-text">
-              <h5>Praesent Morbi</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, placeat recusandae, libero adipisci beatae laborum.</p>
+              <h5 class="my-3">{{element.title}}</h5>
+              <p>{{element.text}}</p>
             </div>
           </div>
         </div>
@@ -62,7 +35,7 @@
               <h6>Our Mission</h6> 
             </div>
           </div>
-          <h3 class="my-5">Our philosophy is learning through play as we offer a stimulating environment for children.</h3>
+          <h3 class="my-5 me-5">Our philosophy is learning through play as we offer a stimulating environment for children.</h3>
           <div class="left-bottom">
             <!-- left elements -->
             <div class="element d-flex mb-3">
@@ -122,54 +95,18 @@
           <h3>We have been educating children for over fitteen vears. Our goal is to create a place tnat engages each child.</h3>
           <p class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error molestiae impedit minus natus fugit, at enim. Fuga aliquam laudantium eos totam, numquam soluta aliquid velit quis deserunt nesciunt dolore blanditiis?</p>
           <ul>
-            <li>
-              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <li v-for="(element,index) in educationList" :key="index">
+              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> <p>{{element.text}}</p>
             </li>
           </ul>
         </div>
         <div class="right d-flex flex-wrap">
-          <div class="square">
+          <div class="square" v-for="(element,index) in educationSquare" :key="index">
             <div class="img position-relative">
-              <img src="../assets/fable/images/toy.png" alt="">
+              <img :src="require(`../assets/fable/images/${element.img}`)" :alt="element.title +'img'">
             </div>
-            <h3>Learning &#38; fun</h3>
-            <p>Praesent modea est gravida node vehicula lactus.</p>
-          </div>
-          <div class="square">
-            <div class="img position-relative">
-              <img src="../assets/fable/images/meal.png" alt="">
-            </div>
-            <h3>Healthy Meals</h3>
-            <p>Praesent modea est gravida node vehicula lactus.</p>
-          </div>
-          <div class="square">
-            <div class="img position-relative">
-              <img src="../assets/fable/images/school.png" alt="">
-            </div>
-            <h3>Friendly Place</h3>
-            <p>Praesent modea est gravida node vehicula lactus.</p>
-          </div>
-          <div class="square">
-            <div class="img position-relative">
-              <img src="../assets/fable/images/shield.png" alt="">
-            </div>
-            <h3>Children Safety</h3>
-            <p>Praesent modea est gravida node vehicula lactus.</p>
+            <h3>{{element.title}}</h3>
+            <p>{{element.text}}</p>
           </div>
         </div>
       </div>
@@ -177,10 +114,30 @@
     <!-- section gallery -->
     <section id="gallery" class="my-5">
       <div class="gallery-top d-flex">
-        <img src="../assets/fable/images/gallery_01.jpg" alt="">
-        <img src="../assets/fable/images/gallery_02.jpg" alt="">
-        <img src="../assets/fable/images/gallery_03.jpg" alt="">
-        <img src="../assets/fable/images/gallery_04.jpg" alt="">
+        <div class="img position-relative">
+          <div class="plus position-absolute">
+            <img src="../assets/fable/images/image_overlay.png" alt="plus img">
+          </div>
+          <img src="../assets/fable/images/gallery_01.jpg" alt="gallery children photo">
+        </div>
+        <div class="img position-relative">
+          <div class="plus position-absolute">
+            <img src="../assets/fable/images/image_overlay.png" alt="plus img">
+          </div>
+          <img src="../assets/fable/images/gallery_02.jpg" alt="gallery children photo">
+        </div>
+        <div class="img position-relative">
+          <div class="plus position-absolute">
+            <img src="../assets/fable/images/image_overlay.png" alt="plus img">
+          </div>
+          <img src="../assets/fable/images/gallery_03.jpg" alt="gallery children photo">
+        </div>
+        <div class="img position-relative">
+          <div class="plus position-absolute">
+            <img src="../assets/fable/images/image_overlay.png" alt="plus img">
+          </div>
+          <img src="../assets/fable/images/gallery_04.jpg" alt="gallery children photo">
+        </div>
       </div>
       <div class="gallery-center d-flex">
         <div class="my-container d-flex align-items-center justify-content-between">
@@ -213,59 +170,24 @@
           <img src="../assets/fable/images/header_divider.png" alt=" header divider img">
         </div>
         <div class="card-group my-4">
-          <div class="card border-0">
-            <p class="my-3">October 03,14</p>
+          <div class="card border-0"  v-for="element in newCard" :key="element.number">
+            <p class="my-3">{{element.date}}</p>
             <div class="img position-relative">
-              <img src="../assets/fable/images/blog_09.jpg" class="card-img-top " alt="boy photo">
-              <div class="position-absolute number p-2">42</div>
+              <img :src="require(`../assets/fable/images/${element.img}`)" class="card-img-top " alt="boy photo">
+              <div class="position-absolute number p-2">{{element.number}}</div>
             </div>
             <div class="card-body ">
-              <h5 class="card-title">Drawing and Painting Lessons</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title">{{element.title}}</h5>
+              <p class="card-text">{{element.text}}</p>
             </div>
             <div class="card-footer bg-white">
               <img src="../assets/fable/images/author.png" alt="author img">
-              <span class="mx-3">Anna Brown</span>
+              <span class="mx-3">{{element.author}}</span>
               <img src="../assets/fable/images/category.png" alt="category img">
-              <span class="mx-3">Events,Fun</span>
-            </div>
-          </div>
-          <div class="card border-0 mx-5">
-            <p class="my-3">October 03,14</p>
-            <div class="img position-relative">
-              <img src="../assets/fable/images/blog_10.jpg" class="card-img-top" alt="boys photo">
-              <div class="position-absolute number p-2">19</div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Fall Parents Meeting Day</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div class="card-footer bg-white">
-              <img src="../assets/fable/images/author.png" alt="author img">
-              <span class="mx-3">Anna Brown</span>
-              <img src="../assets/fable/images/category.png" alt="category img">
-              <span class="mx-3">Events,Fun</span>
-            </div>
-          </div>
-          <div class="card border-0">
-            <p class="my-3">September 20,14</p>
-            <div class="img position-relative">
-              <img src="../assets/fable/images/blog_08.jpg" class="card-img-top" alt="boy smile photo">
-              <div class="position-absolute number p-2">22</div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Birthday in Kindergarten</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            </div>
-            <div class="card-footer bg-white">
-              <img src="../assets/fable/images/author.png" alt="author img">
-              <span class="mx-3">Anna Brown</span>
-              <img src="../assets/fable/images/category.png" alt="category img">
-              <span class="mx-3">Events,Fun</span>
+              <span class="mx-3">{{element.category}}</span>
             </div>
           </div>
         </div>
-        <!-- <div class="read-more   position-absolute d-flex">read more </div> -->
         <div class="text-center">
           <button class="btn text-uppercase text-white">Go to blog<img src="../assets/fable/images/slider_next.png" alt="next img"></button>
         </div>
@@ -284,6 +206,103 @@ export default {
     Carousel,
     Card
   },
+  data:function(){
+    return{
+      welcomeCircles:[
+        {
+          title:"Morbis Etos",
+          img:"schoolbag_alt.png",
+          text:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, placeat recusandae, libero adipisci beatae laborum.",
+        },
+        {
+          title:"Congue Gravida",
+          img:"stroller_alt.png",
+          text:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, placeat recusandae, libero adipisci beatae laborum.",
+        },
+        {
+          title:"Maecenas Node",
+          img:"bell_alt.png",
+          text:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, placeat recusandae, libero adipisci beatae laborum.",
+        },
+        {
+          title:"Praesent Morbi",
+          img:"globe_alt.png",
+          text:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, placeat recusandae, libero adipisci beatae laborum.",
+        }
+      ],
+      educationSquare:[
+        {
+          title:"Learning & fun",
+          img:"toy.png",
+          text:"Praesent modea est gravida node vehicula lactus.",
+        },
+        {
+          title:"Healthy Meals",
+          img:"meal.png",
+          text:"Praesent modea est gravida node vehicula lactus.",
+        },
+        {
+          title:"Friendly Place",
+          img:"school.png",
+          text:"Praesent modea est gravida node vehicula lactus.",
+        },
+        {
+          title:"Children Safety",
+          img:"shield.png",
+          text:"Praesent modea est gravida node vehicula lactus.",
+        }
+      ],
+      educationList:[
+        { 
+          text:"Comprehensive reporting on individual achievement"
+        },
+        {
+          text:"Educational field trips and school presentations"
+        },
+        {
+          text:"Individual attention in a small-class setting"
+        },
+        {
+          text:"Learning program with after-school care"
+        },
+        {
+          text:"Opportunities to carry out scientific investigations"
+        },
+        {
+          text:"Positive learning environment for your child"
+        }
+      ],
+      newCard:[
+        {
+          title:"Drawing and Painting Lessons",
+          img:"blog_09.jpg",
+          text:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+          author:"Anna Brown",
+          category:"Events,Fun",
+          number:42,
+          date:"October 03,2014"
+        },
+        {
+          title:"Fall Parents Meeting Day",
+          img:"blog_10.jpg",
+          text:"This card has supporting text below as a natural lead-in to additional content.",
+          author:"Anna Brown",
+          category:"Dance,Education",
+          number:19,
+          date:"October 03,2014"
+        },
+        {
+          title:"Birthday in Kindergarten",
+          img:"blog_08.jpg",
+          text:"This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.",
+          author:"Anna Brown",
+          category:"Games,General",
+          number:22,
+          date:"September 20,2014"
+        }
+      ]
+    }
+  }
 
 }
 </script>
@@ -303,14 +322,18 @@ export default {
         padding-left: 60px;
       }
       .welcome-footer{
-        .element-circle{
-          margin:0 .8rem;
-          .circle.orange{
-            background-color: $orange;
-          }
-          .circle.violet{
+        .element-circle:nth-child(even){
+          .circle{
             background-color: $violet;
           }
+        }
+        .element-circle:nth-child(odd){
+          .circle{
+            background-color: $orange;
+          }
+        }
+        .element-circle{
+          margin:0 .8rem;
           .circle{
             padding: 70px;
             width: 100px;
@@ -410,8 +433,23 @@ export default {
     }  
     #gallery{
       .gallery-top{
-        img{
-          width: calc(100% / 4)
+        .img{
+          width: calc(100% / 4);
+          img{
+            width: 100%;
+          }
+          .plus{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: $violet;
+            opacity: 0;
+            padding: 2.5rem;
+            border-radius:50% ;
+          }
+          &:hover .plus{
+            opacity: 0.5;
+          }
         }
       }
       .gallery-center{
@@ -444,6 +482,9 @@ export default {
     }
     #new{
       .my-container{
+        .card:nth-child(2){
+          margin: 0 2rem;
+        }
         .card-footer{
           span{
             color: grey;

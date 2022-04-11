@@ -17,7 +17,7 @@
       </div>
       <div class="img position-relative">
         <img :src="require(`../assets/fable/images/`+element.img)" :alt=" element.text+' img'">
-        <div class="read-more text-uppercase text-white position-absolute d-flex">read more <img src="../assets/fable/images/slider_next.png" alt="next img"></div>
+        <button class="btn rounded-0 read-more text-uppercase text-white position-absolute d-flex">read more <img src="../assets/fable/images/slider_next.png" alt="next img"></button>
       </div>
     </div>
   </div>

@@ -8,7 +8,7 @@
           </div>
           <div class="right-header">
             <ul class="list-unstyled d-flex">
-              <li class="element-header p-4 text-center" :class="(element.active) ? 'active' : ''" v-for="(element,index) in headerList" :key="index">
+              <li class="element-header p-4 text-center" :class="(element.active) ? 'active' : ''" v-for="(element,index) in headerList" :key="index" @click="select(element)">
                 <img :src="require(`../assets/fable/`+element.imgActive)" :alt=" element.text+' img'" v-if="element.active">
                 <img :src="require(`../assets/fable/`+element.img)" :alt="element.text+' img'" v-else>
                 <p class="mt-2">{{element.text}}</p>
@@ -73,6 +73,16 @@ export default {
         }
       ]
     }
+  },
+  methods:{
+    select(element){
+      this.headerList.forEach(option => {
+        if (option.active==true) {
+          option.active=false;
+        }
+      });
+      element.active=!element.active;
+    }
   }
 }
 </script>
@@ -101,6 +111,9 @@ header{
           }
         }
         ul{
+          li{
+            cursor: pointer;
+          }
           li.active{
             background-color: $orange;
             color: white;
