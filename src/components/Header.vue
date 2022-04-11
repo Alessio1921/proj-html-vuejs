@@ -11,7 +11,7 @@
               <li class="element-header p-4 text-center" :class="(element.active) ? 'active' : ''" v-for="(element,index) in headerList" :key="index">
                 <img :src="require(`../assets/fable/`+element.imgActive)" :alt=" element.text+' img'" v-if="element.active">
                 <img :src="require(`../assets/fable/`+element.img)" :alt="element.text+' img'" v-else>
-                <p>{{element.text}}</p>
+                <p class="mt-2">{{element.text}}</p>
               </li>
             </ul>
           </div>
@@ -86,6 +86,9 @@ export default {
 .header-logo{
   height: 100px;
 }
+p{
+  color: $violet;
+}
 header{
   height: 100%;
   .my-container{
@@ -101,6 +104,9 @@ header{
           li.active{
             background-color: $orange;
             color: white;
+            p{
+              color: white;
+            }
           }
         }
       }

@@ -14,7 +14,7 @@
     <div class="my-thumbnails d-flex">
       <span v-for="(element,index) in photoList" :key="index">
         <div class="my-thumbnail" :class="{'active': element.active}">
-          <img :src="require(`../assets/fable/images/`+element.img)" :alt=" element.text+' img'">
+          <img :src="require(`../assets/fable/images/`+element.imgThumb)" :alt=" element.text+' img'">
         </div>
       </span>
     </div>
@@ -32,16 +32,19 @@ export default {
           img:"gallery_07-690x506.jpg",
           active:false,
           text:"little girl photo",
+          imgThumb:"gallery_07-690x506.jpg",
         },
         {
           img:"gallery_01-690x506.jpg",
           active:false,
           text:"children photo",
+          imgThumb:"gallery_01-690x506.jpg",
         },
         {
           img:"gallery_08-690x506.jpg",
           active:true,
           text:"teacher photo",
+          imgThumb:"gallery_08-690x506.jpg",
         }
       ],
     }
@@ -99,12 +102,12 @@ export default {
       }
     }
     .my-thumbnails{
-      margin-top: .5rem;
+      margin-top: .8rem;
       overflow: hidden;
       width: 100%;
       .my-thumbnail{
         padding-bottom: .5rem ;
-        height: 123px;
+        height: 135px;
         width: 100%;
         img{
           height: 100%;
@@ -115,7 +118,7 @@ export default {
       }
     }
     .my-thumbnails span:nth-child(2){
-      margin: 0 .5rem;
+      margin: 0 .8rem;
     }
   }
 </style>

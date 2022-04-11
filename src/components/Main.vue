@@ -123,22 +123,22 @@
           <p class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error molestiae impedit minus natus fugit, at enim. Fuga aliquam laudantium eos totam, numquam soluta aliquid velit quis deserunt nesciunt dolore blanditiis?</p>
           <ul>
             <li>
-              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </li>
             <li>
-              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </li>
             <li>
-              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </li>
             <li>
-              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </li>
             <li>
-              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </li>
             <li>
-              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <img src="../assets/fable/images/style_1.png" alt="check img" class="me-2"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </li>
           </ul>
         </div>
@@ -187,6 +187,87 @@
           <button class="btn btn-outline-light text-uppercase rounded-0">view gallery ></button>
         </div>
       </div>
+      <div class="gallery-bottom text-white">
+        <div class="my-container text-center">
+          <div class="quote d-flex justify-content-center">
+            <div class="rounded-circle border border-light p-3 my-4">
+              <img src="../assets/fable/images/quote_alt.png" alt="quote img">
+            </div>
+          </div>
+          <h2>I have to say that I have 2 children ages 5 and 2 and have used various daycare's in Kindergartens and this is by far the very best I have ever used.</h2>
+          <div class="divider mx-auto my-4"></div>
+          <h6>Cecil J.Kirk</h6>
+          <div class="my-thumbnail mx-auto d-flex justify-content-center">
+            <div class="rectangle mx-2" v-for="(n,index) in 6" :key="index"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="new">
+      <div class="my-container">
+        <div class="our-top text-center">
+          <h1>What's New</h1>
+          <p>Keep up to date with the latest news</p>
+          <img src="../assets/fable/images/header_divider.png" alt=" header divider img">
+        </div>
+        <div class="card-group my-4">
+          <div class="card border-0">
+            <p class="my-3">October 03,14</p>
+            <div class="img position-relative">
+              <img src="../assets/fable/images/blog_09.jpg" class="card-img-top " alt="boy photo">
+              <div class="position-absolute number p-2">42</div>
+            </div>
+            <div class="card-body ">
+              <h5 class="card-title">Drawing and Painting Lessons</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer bg-white">
+              <img src="../assets/fable/images/author.png" alt="author img">
+              <span class="mx-3">Anna Brown</span>
+              <img src="../assets/fable/images/category.png" alt="category img">
+              <span class="mx-3">Events,Fun</span>
+            </div>
+          </div>
+          <div class="card border-0 mx-5">
+            <p class="my-3">October 03,14</p>
+            <div class="img position-relative">
+              <img src="../assets/fable/images/blog_10.jpg" class="card-img-top" alt="boys photo">
+              <div class="position-absolute number p-2">19</div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Fall Parents Meeting Day</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer bg-white">
+              <img src="../assets/fable/images/author.png" alt="author img">
+              <span class="mx-3">Anna Brown</span>
+              <img src="../assets/fable/images/category.png" alt="category img">
+              <span class="mx-3">Events,Fun</span>
+            </div>
+          </div>
+          <div class="card border-0">
+            <p class="my-3">September 20,14</p>
+            <div class="img position-relative">
+              <img src="../assets/fable/images/blog_08.jpg" class="card-img-top" alt="boy smile photo">
+              <div class="position-absolute number p-2">22</div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Birthday in Kindergarten</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer bg-white">
+              <img src="../assets/fable/images/author.png" alt="author img">
+              <span class="mx-3">Anna Brown</span>
+              <img src="../assets/fable/images/category.png" alt="category img">
+              <span class="mx-3">Events,Fun</span>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="read-more   position-absolute d-flex">read more </div> -->
+        <div class="text-center">
+          <button class="btn text-uppercase text-white">Go to blog<img src="../assets/fable/images/slider_next.png" alt="next img"></button>
+        </div>
+      </div>
     </section>
   </main>
 </template>
@@ -208,7 +289,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   @import "../assets/scss/style.scss";
-  h3{
+  h3,h1{
     color: $violet;
   }
   main{
@@ -303,6 +384,9 @@ export default {
           margin-bottom: .5rem;
         }
       }
+      p{
+        display: inline-block;
+      }
       .right{
         .square{
           width: 50%;
@@ -328,6 +412,57 @@ export default {
       .gallery-center{
         background-image: url("../assets/fable/images/pattern.png");
         height: 120px;
+      }
+      .gallery-bottom{
+        background-image: url("../assets/fable/images/parallax_02.jpg");
+        height: 550px;
+        background-position: center;
+        background-size: cover;
+        padding-top: 4rem;
+        .divider{
+          border: .8px solid white;
+          width: 4rem;
+        }
+        .my-thumbnail{
+          margin: 5rem 0;
+        }
+        .rectangle{
+          width: 4rem;
+          height: 1rem;
+          border: solid 1px white;
+        }
+        .rectangle:nth-child(3){
+          position: relative;
+          bottom: 1.5rem;
+        }
+      }
+    }
+    #new{
+      .my-container{
+        .card-footer{
+          span{
+            color: grey;
+          }
+        }
+        h5{
+          color: $violet;
+        }
+        .number{
+          bottom: 0;
+          right: 0;
+          background-color: $orange;
+          color: white;
+        }
+        .btn{
+          background-color: $orange;
+          border-radius: 0;
+          padding-top: 0.8rem;
+          padding-left: 1.3rem;
+          height: 3rem;
+          img{
+            height: 2rem;
+          }
+        }
       }
     }
   }

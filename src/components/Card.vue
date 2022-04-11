@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex flex-wrap">
-    <div class="my-card d-flex me-4 mb-4" v-for="(element,index) in cardList" :key="index">
+    <div class="my-card d-flex" v-for="(element,index) in cardList" :key="index">
       <div class="info p-3">
         <h5 class="text-white">{{element.title}}</h5>
         <p class="text-white">Class name</p>
@@ -70,9 +70,10 @@ export default {
 <style scoped lang="scss">
   @import "../assets/scss/style.scss";
   .my-card{
-    width: 456px;
+    width: 508px;
     height: 175px;
     background-color: $violet;
+    margin: 0 2rem 2rem 0;
     .info{
       width: 50%;
       .info-bottom{
@@ -81,6 +82,7 @@ export default {
         font-size:.9rem
       }
       p{
+        color: white;
         margin: 0;
       }
     }

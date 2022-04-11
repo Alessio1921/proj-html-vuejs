@@ -1,6 +1,8 @@
 <template>
-  <div>
-  </div>
+  <footer>
+    <div class="footer-top"></div>
+    <div class="footer-down"></div>
+  </footer>
 </template>
 
 <script>
