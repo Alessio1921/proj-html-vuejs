@@ -319,7 +319,9 @@ export default {
         color: $violet;
       }
       .my-container{
-        padding-left: 60px;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
       }
       .welcome-footer{
         .element-circle:nth-child(even){
@@ -388,7 +390,7 @@ export default {
           }
           .circle{
             padding: 20px;
-            width: 90px;
+            width: 80px;
             height: 70px;
             border-radius: 50%;
             position: relative;

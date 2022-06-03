@@ -70,8 +70,7 @@ export default {
 <style scoped lang="scss">
   @import "../assets/scss/style.scss";
   .my-card{
-    width: 508px;
-    height: 175px;
+    width: 47.5%;
     background-color: $violet;
     margin: 0 2rem 2rem 0;
     .info{
@@ -79,7 +78,6 @@ export default {
       .info-bottom{
         color: white;
         top:50px;
-        font-size:.9rem
       }
       p{
         color: white;
@@ -93,6 +91,7 @@ export default {
         width: 100%;
       }
       .read-more{
+        height: 20%;
         bottom: 0;
         right: 0;
         background-color: $orange;

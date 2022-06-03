@@ -1,7 +1,7 @@
 <template>
   <footer class="mt-5">
     <div class="my-container">
-      <div class="footer-top">
+      <div class="footer-top text-center">
         <div class="indications">
           <h6>45°23'45.6"N 75°40'35.6"W</h6>
           <p>98WF+C9F Nepean, Ottawa, Ontario, Canada</p>
@@ -102,7 +102,7 @@ export default {
       z-index: 3;
       background-color: white;
       top: 36px;
-      left: 10px;
+      left: 190px;
       h6,p{
         padding-top: 5px;
         padding-left: 15px;
@@ -117,7 +117,7 @@ export default {
       height: 86px;
       width: 50px;
       top:10px;
-      left:192px ;
+      left:373px ;
       p{
         color: #1a73e8;
         font-size: .7rem;

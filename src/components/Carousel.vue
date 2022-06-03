@@ -83,6 +83,12 @@ export default {
 
   .carousel{
     width: 100%;
+    span{
+      width: 33.3%;
+      margin: 0;
+      padding: 0;
+      height: 150px;
+    }
     .img-principal{
       img{
         width: 100%;
@@ -105,12 +111,15 @@ export default {
       margin-top: .8rem;
       overflow: hidden;
       width: 100%;
+      height: 100%;
       .my-thumbnail{
         padding-bottom: .5rem ;
-        height: 135px;
         width: 100%;
+        height: 100%;
+        border-bottom: 3px solid transparent;
         img{
           height: 100%;
+          width: 100%;
         }
       }
       .my-thumbnail.active{
